@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>EvalDom</title>
+  </head>
+  <body>
+    <header><h1>Evaluation BeWeb DOM</h1></header>
+    <nav id="navwrap">
+      <button id="button">MENU ON/OFF</button>
+      <div style="display: none">
+        <ul class="navbar" id="thenav">
+          <li>
+            <a class="tablinks" onclick="openCity(event, 'MENU1')">MENU 1</a>
+          </li>
+          <li>
+            <a class="tablinks" onclick="openCity(event, 'MENU2')">MENU 2</a>
+          </li>
+          <li>
+            <a class="tablinks" onclick="openCity(event, 'MENU3')">MENU 3</a>
+          </li>
+          <li>
+            <a class="tablinks" onclick="openCity(event, 'MENU4')">MENU 4</a>
+          </li>
+          <li>
+            <a class="tablinks" onclick="openCity(event, 'MENU5')">MENU 5</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="menu" id="MENU1">
+        <h3>MENU 1</h3>
+        <p>
+          Le survol sur un lien du tableau affiche une image en dessous ! Essaye
+          !
+        </p>
+        <table id="Table" onmouseout="survol('')">
+          <tr>
+            <td><a href="#" onmouseover="survol('img1.png');">LIEN 1</td></a>
+            <td><a href="#" onmouseover="survol('img2.png');">LIEN 2</td></a>
+            <td><a href="#" onmouseover="survol('img3.png');">LIEN 3</td></a>
+          </tr>
+          <tr>
+            <td><a href="#" onmouseover="survol('img4.png');">LIEN 4</td></a>
+            <td><a href="#" onmouseover="survol('img5.png');">LIEN 5</td></a>
+            <td><a href="#" onmouseover="survol('img6.png');">LIEN 6</td></a>
+          </tr>
+          <tr>
+            <td><a href="#" onmouseover="survol('img7.png');">LIEN 7</td></a>
+            <td><a href="#" onmouseover="survol('img8.png');">LIEN 8</td></a>
+            <td><a href="#" onmouseover="survol('img9.png');">LIEN 9</td></a>
+          </tr>
+        </table>
+        <div class="affich">
+          <p>
+            <img id="rendu" src="" />
+          </p>
+        </div>
+      </div>
+      <div class="menu" id="MENU2">
+        <h3>MENU2</h3>
+        <input type="text" id="input1" placeholder="Nom"><br>
+        <input type="text" id="input2" placeholder="Prénom"><br>
+        <button type="button" id="add" onclick="insert_Row()">Ajouter</button><br>
+        
+
+    <table id="sampleTable">
+        <thead>Table</thead>
+      <tr>
+        <td>NOM</td>
+        <td>PRENOM</td>
+      </tr>
+      <tr>
+        <td>Love</td>
+        <td>Pedro</td>
+      </tr>
+    </table>
+    </div>
+      
+    <div class="menu" id="MENU3">
+        <h3>MENU3</h3>
+        <h4>Choisissez un style : </h4>
+    <form>
+     <select id="font-family"  onchange="js_style(this)"> 
+        <option value="0">Par défaut</option>      
+        <option value="1">Style 1</option>
+        <option value="2">Style 2</option>
+        <option value="3">Style 3</option>
+        <option value="4">Style 4</option>
+      </select>
+    </form>
+    <h4>Voici votre style :</h4>
+    <p id="text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+       Mollitia, dignissimos porro facere harum deserunt delectus, tempora enim magni, culpa adipisci non vitae quia.
+       Ipsum consectetur quasi architecto beatae suscipit sunt?</p>    
+    </div>
+      
+    <div class="menu" id="MENU4">
+        <h3>MENU4</h3>
+    <h4>Cliquez sur Haut ou Bas pour modifier l'ordre de la liste :</h4>
+    <ul id="lalist">
+        <li id="le1" class="thelist" style="color: red;">Une</li>
+        <li id="le2" class="thelist">Phrase</li>
+        <li id="le3" class="thelist">Qui</li>
+        <li id="le4" class="thelist">Veut</li>
+        <li id="le5" class="thelist">Rien</li>
+        <li id="le6" class="thelist">Dire</li>
+    </ul>
+    
+    
+    <button onclick="haut()">Haut</button>
+     <button onclick="bas()">Bas</button>
+    </div>
+      
+    <div class="menu" id="MENU5">
+        <h3>MENU5</h3>
+    <h2>Choisissez des options, cochez "div" ou "opt" et observez le résultat !</h2>
+      <table id="checkopt">  
+    <tr>
+        <td><input type="checkbox" id="check" name="checked" value="Option1">Option 1</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" id="check2" name="checked" value="Option2">Option 2</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" id="check3" name="checked" value="Option3">Option 3</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" id="check4" name="checked" value="Option4">Option 4</td>
+    </tr>
+    </table>
+    <br>
+    <input type="radio" id="divchoice" onclick="addchoice2()">Div 
+    <input type="radio" id="optchoice" onclick="addchoice()">Opt
+        <br>
+        <div>
+            <select id="checkopt1"></select>
+    </div>
+    <div><p id="checkopt2"></p></div>
+    </div>
+    </div>
+    <footer></footer>
+    <script src="eval.js" type="text/javascript"></script>
+  </body>
+</html>
