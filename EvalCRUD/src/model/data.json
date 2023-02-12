@@ -1,0 +1,38 @@
+{
+  "France": [
+    { "id": 1, "name": "Metz" },
+    { "id": 2, "name": "Paris" },
+    { "id": 3, "name": "Hagondange" },
+    { "id": 4, "name": "Lyon" }
+  ],
+  "Portugal": [
+    { "id": 1, "name": "Porto" },
+    { "id": 2, "name": "Lisbonne" },
+    { "id": 3, "name": "Chaves" },
+    { "id": 4, "name": "Varzim" }
+  ],
+  "Italie": [
+    { "id": 1, "name": "Naples" },
+    { "id": 2, "name": "Rome" },
+    { "id": 3, "name": "Turin" },
+    { "id": 4, "name": "Florence" }
+  ],
+  "Espagne": [
+    { "id": 1, "name": "Madrid" },
+    { "id": 2, "name": "Barcelone" },
+    { "id": 3, "name": "Majorque" },
+    { "id": 4, "name": "Valence" }
+  ],
+  "Allemagne": [
+    { "id": 1, "name": "Berlin" },
+    { "id": 2, "name": "Munich" },
+    { "id": 3, "name": "Francfort" },
+    { "id": 4, "name": "Stuttgart" }
+  ],
+  "Angleterre": [
+    { "id": 1, "name": "Londres" },
+    { "id": 2, "name": "Leeds" },
+    { "id": 3, "name": "Bristol" },
+    { "id": 4, "name": "Manchester" }
+  ]
+}
