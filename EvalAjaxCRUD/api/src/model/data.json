@@ -1,0 +1,100 @@
+{
+  "pc": [
+    {
+      "id": "Id",
+      "name": "Nom",
+      "plateforme": "Plateforme",
+      "support": "Support",
+      "note": "Note",
+      "avancée": "Avancée"
+    },
+    {
+      "id": 0,
+      "name": "Exemple",
+      "plateforme": "Exemple",
+      "support": "Exemple",
+      "note": "Exemple",
+      "avancée": "Jamais joué"
+    }
+  ],
+  "playstation": [
+    {
+      "id": "Id",
+      "name": "Nom",
+      "plateforme": "Plateforme",
+      "support": "Support",
+      "note": "Note",
+      "avancée": "Avancée"
+    },
+    {
+      "id": 0,
+      "name": "Exemple",
+      "plateforme": "Exemple",
+      "support": "Exemple",
+      "note": "Exemple",
+      "avancée": "Jamais joué"
+    },
+    {
+      "id": 1,
+      "name": "Spider-Man",
+      "plateforme": "PSN",
+      "support": "PS4",
+      "note": "17",
+      "avancée": "En cours"
+    }
+  ],
+  "retro": [
+    {
+      "id": "Id",
+      "name": "Nom",
+      "plateforme": "Plateforme",
+      "support": "Support",
+      "note": "Note",
+      "avancée": "Avancée"
+    },
+    {
+      "id": 0,
+      "name": "Exemple",
+      "plateforme": "Exemple",
+      "support": "Exemple",
+      "note": "Exemple",
+      "avancée": "Jamais joué"
+    }
+  ],
+  "switch": [
+    {
+      "id": "Id",
+      "name": "Nom",
+      "plateforme": "Plateforme",
+      "support": "Support",
+      "note": "Note",
+      "avancée": "Avancée"
+    },
+    {
+      "id": 0,
+      "name": "Exemple",
+      "plateforme": "Exemple",
+      "support": "Exemple",
+      "note": "Exemple",
+      "avancée": "Jamais joué"
+    }
+  ],
+  "xbox": [
+    {
+      "id": "Id",
+      "name": "Nom",
+      "plateforme": "Plateforme",
+      "support": "Support",
+      "note": "Note",
+      "avancée": "Avancée"
+    },
+    {
+      "id": 0,
+      "name": "Exemple",
+      "plateforme": "Exemple",
+      "support": "Exemple",
+      "note": "Exemple",
+      "avancée": "Jamais joué"
+    }
+  ]
+}

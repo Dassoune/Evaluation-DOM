@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>MGL: My Gaming Library</title>
+</head>
+<body>
+<header class="header"><img src="./model/banniere_mgl.png" id="banniere" alt=""></header>
+<nav id="navbar">
+    <input type="button" class="active" class="btn-navbar" value="PC" id="pc-btn">
+    <input type="button" class="btn-navbar" value="PLAYSTATION" id="playstation-btn">
+    <input type="button" class="btn-navbar" value="XBOX" id="xbox-btn">
+    <input type="button" class="btn-navbar" value="SWITCH" id="switch-btn">
+    <input type="button" class="btn-navbar" value="RETRO" id="retro-btn">
+    <input type="button" class="btn-navbar" value="TOUS" id="allgames-btn">
+</nav>
+<div id="search">
+    <input type="search" value="Rechercher un jeu" id="search-input" />
+    <input type="button" value="Valider" id="search-btn" onclick="" />
+</div>
+<span class="content">
+  <div class="index-content">
+    <div class="test" id="bvn"><h2>Récupérer ou supprimer un jeu par son ID</h2>
+    <label for="id">ID du jeu</label><br>
+        <input type="number" min="1" max="9999" id="id-pcGames"/><br>
+        <button class="btn" id="get-by-id-button">Récupérer</button>
+        <button class="btn" id="delete-by-id-button">Supprimer</button>
+        <p id="byId" class="resultGame"></p>
+        <p id="delete-pcGames-p" class="resultGame"></p>
+      </div>
+    <div class="test" id="notice"><h2>Ajouter un jeu</h2>
+    <div>
+        <label for="name">Nom du jeu</label><br>
+        <input type="text" id="create-pcGames-name" /><br>
+        <label for="name">Plateforme</label><br>
+        <input type="text" id="create-pcGames-pl" placeholder="Ex: Steam, GOG ..."/><br>
+        <label for="name">Support</label><br>
+        <form>
+     <select id="create-pcGames-supp"> 
+        <option value="PC">PC</option>      
+        <option value="STEAMDECK">SteamDeck</option>
+        <option value="AUTRE">Autre</option>
+      </select>
+    </form>
+    <label for="name">Avancée</label><br>
+        <form>
+     <select id="create-pcGames-av"> 
+        <option value="Jamais joué">Jamais joué</option>      
+        <option value="En cours">En cours</option>
+        <option value="Terminé">Terminé</option>
+      </select>
+    </form>
+        <label for="name">Note</label><br>
+        <input type="number" min="0" max="20" id="create-pcGames-note" /><br>        
+        <button class="btn" id="create-button">Ajouter</button>
+        <p id="add-pcGames-p" class="resultGame"></p>
+      </div>
+    </div>
+    <div class="test" id="pub"><h2>Modifier un jeu</h2>
+        <label for="id">ID du jeu</label><br>
+        <input type="number" min="1" max="9999" id="id-pcGames-update" />
+        <br>
+        <label for="name">Nom du jeu</label><br>
+        <input type="text" id="name-pcGames-update" />
+        <br>
+        <label for="name">Plateforme</label><br>
+        <input type="text" id="update-pcGames-pl" placeholder="Ex: Steam, GOG ..."/><br>
+        <label for="name">Support</label>
+        <form>
+     <select id="update-pcGames-supp"> 
+        <option value="PC">PC</option>      
+        <option value="STEAMDECK">SteamDeck</option>
+        <option value="AUTRE">Autre</option>
+      </select>
+    </form>
+    <label for="name">Avancée</label>
+    <form>
+     <select id="update-pcGames-av"> 
+        <option value="Jamais joué">Jamais joué</option>      
+        <option value="En cours">En cours</option>
+        <option value="Terminé">Terminé</option>
+      </select>
+    </form>
+        <label for="name">Note</label><br>
+        <input type="number" min="0" max="20" id="update-pcGames-note" /><br>
+        <button class="btn" id="update-button">Mettre à jour</button>
+        <div id="update-pcGames-p" class="resultGame"></div>
+      </div>
+</div>
+    <div class="all-games">
+      <button class="btn" id="get-all-button">Voir tous les jeux pc</button>
+      <div id="test">
+        <table id="all-games-table">
+</table> </div>
+    </div>
+    
+</span>
+<footer id="footer"> MGL 2023, Julien Da Assuncao, Tous droits réservés </p>
+</footer>    
+<script src="pc.js" type="text/javascript"></script>    
+</body>
+</html>
